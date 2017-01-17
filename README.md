@@ -20,4 +20,5 @@ There are demos for the API services in each directory:
 ## Additional information
 
 [Website Screenshots API](https://www.webshrinker.com/website-screenshot-api/)
+
 [Website and URL Categories API](https://www.webshrinker.com/website-category-api/)

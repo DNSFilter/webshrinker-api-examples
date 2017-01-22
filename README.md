@@ -17,6 +17,8 @@ There are demos for the API services in each directory:
  * basic_authentication_using_net_http.rb
 
 ### screenshots ###
+* php
+ * basic_authentication_using_curl.php
 * python
  * basic_authentication_using_requests.py
 

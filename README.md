@@ -8,12 +8,13 @@ This repo provides examples that can be used with the [Web Shrinker](https://www
 There are demos for the API services in each directory:
 
 ### categories ###
-* python
- * basic_authentication_using_requests.py
 * php
  * basic_authentication_using_curl.php
  * basic_authentication_using_guzzle.php
-
+* python
+ * basic_authentication_using_requests.py
+* ruby
+ * basic_authentication_using_net_http.rb
 ### screenshots ###
 * python
  * basic_authentication_using_requests.py

@@ -10,22 +10,22 @@ There are demos for the API services in each directory:
 
 ### categories ###
 * php
- * basic_authentication_using_curl.php
- * basic_authentication_using_guzzle.php
+  * basic_authentication_using_curl.php
+  * basic_authentication_using_guzzle.php
 * python
- * basic_authentication_using_requests.py
+  * basic_authentication_using_requests.py
 * ruby
- * basic_authentication_using_net_http.rb
+  * basic_authentication_using_net_http.rb
 
 ### hosts ###
 * python
- * basic_authentication_using_requests.py
+  * basic_authentication_using_requests.py
 
 ### screenshots ###
 * php
- * basic_authentication_using_curl.php
+  * basic_authentication_using_curl.php
 * python
- * basic_authentication_using_requests.py
+  * basic_authentication_using_requests.py
 
 ## Additional information
 

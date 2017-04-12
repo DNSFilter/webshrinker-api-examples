@@ -1,7 +1,8 @@
 This repo provides examples that can be used with the [Web Shrinker](https://www.webshrinker.com) API services, including:
 
-* Website Thumbnail / Screenshots (v2)
 * Website and URL Categories (v2)
+* Website Domain / Hostname Information (v2)
+* Website Thumbnail / Screenshots (v2)
 
 ## Examples and Demos
 
@@ -16,6 +17,10 @@ There are demos for the API services in each directory:
 * ruby
  * basic_authentication_using_net_http.rb
 
+### hosts ###
+* python
+ * basic_authentication_using_requests.py
+
 ### screenshots ###
 * php
  * basic_authentication_using_curl.php
@@ -24,6 +29,9 @@ There are demos for the API services in each directory:
 
 ## Additional information
 
+[Website and URL Categories API](https://www.webshrinker.com/website-category-api/)
+
+[Website Domain / Hostname API](https://www.webshrinker.com/website-domain-api/)
+
 [Website Screenshots API](https://www.webshrinker.com/website-screenshot-api/)
 
-[Website and URL Categories API](https://www.webshrinker.com/website-category-api/)

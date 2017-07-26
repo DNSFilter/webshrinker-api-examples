@@ -26,10 +26,10 @@ switch ($status_code) {
         // Build a string array containing the category ID, the human friendly category name, score and confident values for each entry
         $categories = array();
         foreach ($category_data as $entry)
-            $categories[] = sprintf("(%s) %s [score=%0.2f,confident=%s]", $entry->id, $entry->label, $entry->score, ($entry->confident ? 'True' : 'False'));
+            $categories[] = sprintf("(%s) %s [score=%f,confident=%s]", $entry->id, $entry->label, $entry->score, ($entry->confident ? 'True' : 'False'));
 
-        $formatted_categories = implode(", ", $categories);
-        print "'{$target_website}' belongs to the following categories: {$formatted_categories}\n";
+        $formatted_categories = implode("\n", $categories);
+        print "'{$target_website}' belongs to the following categories:\n{$formatted_categories}\n";
         break;
     case 202:
         // The request is being categorized right now in real time, check again for an updated answer

@@ -36,8 +36,8 @@ switch ($status_code) {
         print "The categories for '{$target_website}' are being determined, check again in a few seconds\n";
         break;
     default:
-        // The different status codes are covered in the documentation
-        // http://docs.webshrinker.com/v2/website-category-api.html#category-lookup)
+        // The different status codes are covered in the documentation:
+        // https://docs.webshrinker.com/v3/website-category-api.html
         print "An error occurred: HTTP {$status_code}\n";
         if (isset($result->error)) {
             $error = $result->error->message;

@@ -26,7 +26,7 @@ elif status_code == 202:
     # The request is being categorized right now in real time, check again for an updated answer
     print "The categories for '%s' are being determined, check again in a few seconds" % target_website
 else:
-    # The different status codes are covered in the documentation (http://docs.webshrinker.com/v2/website-category-api.html#category-lookup)
+    # The different status codes are covered in the documentation (https://docs.webshrinker.com/v3/website-category-api.html)
     print "An error occurred: HTTP %d" % status_code
     if 'error' in data:
         print data['error']['message']

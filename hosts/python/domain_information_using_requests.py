@@ -8,12 +8,12 @@
 import requests
 from base64 import urlsafe_b64encode
 
-target_website = "<the domain name/IP address of the site to retrieve the information about>"
+target_website = b"<the domain name/IP address of the site to retrieve the information about>"
 
 key = "<insert your API key>"
 secret_key = "<insert your API secret key>"
 
-api_url = "https://api.webshrinker.com/hosts/v2/%s" % urlsafe_b64encode(target_website)
+api_url = "https://api.webshrinker.com/hosts/v2/%s" % urlsafe_b64encode(target_website).decode('utf-8')
 
 response = requests.get(api_url, auth=(key, secret_key))
 status_code = response.status_code
@@ -21,19 +21,19 @@ data = response.json()
 
 if status_code == 200:
     # Do something with the JSON response
-    print data
+    print(data)
 elif status_code == 400:
     # Bad or malformed HTTP request
-    print "Bad or malformed HTTP request"
-    print data
+    print("Bad or malformed HTTP request")
+    print(data)
 elif status_code == 401:
     # Unauthorized
-    print "Unauthorized - check your access and secret key permissions"
-    print data
+    print("Unauthorized - check your access and secret key permissions")
+    print(data)
 elif status_code == 402:
     # Request limit reached
-    print "Account request limit reached"
-    print data
+    print("Account request limit reached")
+    print(data)
 else:
     # General error occurred
-    print "A general error occurred, try the request again"
+    print("A general error occurred, try the request again")

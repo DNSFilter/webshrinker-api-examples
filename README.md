@@ -1,7 +1,7 @@
 This repo provides examples that can be used with the [Web Shrinker](https://www.webshrinker.com) API services, including:
 
 * Website and URL Categories (v3)
-* Website Domain / Hostname Information (v2)
+* Website Domain / Hostname Information (v3)
 * Website Thumbnail / Screenshots (v2)
 
 ## Examples and Demos

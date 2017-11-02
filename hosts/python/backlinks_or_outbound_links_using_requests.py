@@ -9,12 +9,21 @@ import requests
 import json
 from base64 import urlsafe_b64encode
 
-target_website = b"<the domain name/IP address of the site to retrieve the information about>"
+try:
+    from urllib import urlencode
+except ImportError:
+    from urllib.parse import urlencode
+
+target_website = b"<the domain name/IP address of the site to retrieve the hyperlinks>"
 
 key = "<insert your API key>"
 secret_key = "<insert your API secret key>"
 
-api_url = "https://api.webshrinker.com/hosts/v3/%s" % urlsafe_b64encode(target_website).decode('utf-8')
+params = {
+    "limit": 10
+}
+
+api_url = "https://api.webshrinker.com/hosts/v3/{}/links/inbound?{}".format(urlsafe_b64encode(target_website).decode('utf-8'), urlencode(params, True))
 
 response = requests.get(api_url, auth=(key, secret_key))
 status_code = response.status_code
